@@ -1,3 +1,3 @@
 # Netflix video player
 
-![](media/teaser.mp4)
+![test](media/teaser.mp4)
