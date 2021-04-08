@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container:hover .controls {
+  opacity: 1;
+}
+
+.controls {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1;
+
+  transition: opacity 0.5s ease-in-out;
+}
+.central {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bottom .time {
+  padding-bottom: 7px;
+  padding-left: 7px;
+}
